@@ -23,7 +23,34 @@ extern "C" {
 	JNIEXPORT void JNICALL Java_Test2_Tester_printObjects
 	(JNIEnv*, jobject, jobjectArray);
 
+	/*
+	 * Class:     Test2_Tester
+	 * Method:    retrieve
+	 * Signature: ()LTest2/EventArgs;
+	 */
+	JNIEXPORT jobject JNICALL Java_Test2_Tester_retrieve
+	(JNIEnv*, jobject);
+
+	/*
+	 * Class:     Test2_Tester
+	 * Method:    retrieveAll
+	 * Signature: ()Ljava/util/List;
+	 */
+	JNIEXPORT jobject JNICALL Java_Test2_Tester_retrieveAll
+	(JNIEnv*, jobject);
+
+	/*
+	 * Class:     Test2_Tester
+	 * Method:    printHashMap
+	 * Signature: (Ljava/util/HashMap;)V
+	 */
+	JNIEXPORT void JNICALL Java_Test2_Tester_printHashMap
+	(JNIEnv*, jobject, jobject);
+
 #ifdef __cplusplus
 }
 #endif
 #endif
+
+
+
